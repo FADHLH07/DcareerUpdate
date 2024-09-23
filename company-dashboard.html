@@ -241,40 +241,40 @@
     <h2>Welcome <span id="companyUsername"></span></h2>
     <!-- <p>Ini adalah halaman Profil Perusahaan Anda</p> -->
     <form id="companyProfileForm" onsubmit="saveProfile(event)">
+      <label for="companyLogo">Logo Perusahaan</label>
+      <input type="file" id="companyLogo" name="companyLogo" accept="image/jpeg, image/png" onchange="previewLogo()"
+        required />
+      <img id="logoPreview" src="" alt="Logo Perusahaan" style="display:none;" />
+      <!-- <p class="example">Unggah logo dalam format JPG/JPEG/PNG dengan ukuran maksimal 5 MB</p> -->
+
       <label for="companyName">Nama Perusahaan</label>
       <input type="text" id="companyName" name="companyName" required />
 
       <label for="businessSector">Sektor Bisnis</label>
       <input type="text" id="businessSector" name="businessSector" required />
-      <p class="example">Contoh: Edukasi, Kesehatan, dsb</p>
-
-      <label for="companyLogo">Logo Perusahaan</label>
-      <input type="file" id="companyLogo" name="companyLogo" accept="image/jpeg, image/png" onchange="previewLogo()"
-        required />
-      <img id="logoPreview" src="" alt="Logo Perusahaan" style="display:none;" />
-      <p class="example">Unggah logo dalam format JPG/JPEG/PNG dengan ukuran maksimal 5 MB</p>
+      <!-- <p class="example">Contoh: Edukasi, Kesehatan, dsb</p> -->
 
       <label for="companyDescription">Deskripsi Perusahaan</label>
-      <textarea id="companyDescription" name="companyDescription" rows="5" placeholder="" required>
-
-      </textarea>
-      <p class="example">Masukkan visi, misi, budaya kerja, dan keuntungan bekerja di perusahaan Anda.</p>
-
-      <label for="numberOfEmployees">Jumlah Karyawan</label>
-      <div class="radio-container">
-        <label><input type="radio" name="numberOfEmployees" value="<100" required />
-          < 100</label>
-            <label><input type="radio" name="numberOfEmployees" value="500" required /> 100-500</label>
-            <label><input type="radio" name="numberOfEmployees" value="1000" required /> 500-1000</label>
-            <label><input type="radio" name="numberOfEmployees" value="> 1000" required /> > 1000</label>
-      </div>
+      <textarea id="companyDescription" name="companyDescription" rows="3" placeholder="halo" required> </textarea>
 
       <label for="phoneNumber">Nomor Telepon</label>
       <input type="tel" id="phoneNumber" name="phoneNumber" required />
+      <!-- <label for="numberOfEmployees">Jumlah Karyawan</label> -->
+
+      <!-- <div class="radio-container">
+        <label><input type="radio" name="numberOfEmployees" value="100" required />
+           100</label>
+            <label><input type="radio" name="numberOfEmployees" value="500" required /> 100-500</label>
+            <label><input type="radio" name="numberOfEmployees" value="1000" required /> 500-1000</label>
+            <label><input type="radio" name="numberOfEmployees" value="> 1000" required /> > 1000</label>
+      </div> -->
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
 
       <label for="companyWebsite">Website Perusahaan</label>
       <input type="url" id="companyWebsite" name="companyWebsite" required />
-      <p class="example">https://karyabersama.com</p>
+      <!-- <p class="example">https://karyabersama.com</p> -->
 
 
       <button type="submit" class="btnsave">Simpan</button>
